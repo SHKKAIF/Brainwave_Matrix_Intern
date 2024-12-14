@@ -1,0 +1,196 @@
+:root {
+    --main-bg-color: #0F1111;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+header {
+    background-color: var(--main-bg-color);
+    font-size: 20px;
+}
+
+nav {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+
+    width: 50px;
+    padding: 0 25px;
+
+}
+
+nav ul {
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0 23px;
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 30vw;
+    height: 33px;
+    border-radius: 6px;
+    margin: 0 12px 0 50px;
+    padding: 0 12px;
+}
+
+.search button {
+    font-weight: 900;
+    padding: 5px 8px;
+    color: aliceblue;
+    background: var(--main-bg-color);
+    border: solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.cart-favorite {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-favorite .btn {
+    margin: 0px 0px 0px 170px;
+    font-weight: 900;
+    padding: 5px 10px;
+    color: aliceblue;
+    background: var(--main-bg-color);
+    border: solid white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.add-to-cart .btn {
+    margin: 0px 10px 0px 10px;
+    font-weight: 900;
+    padding: 5px 10px;
+    color: aliceblue;
+    background: var(--main-bg-color);
+    border: solid white;
+    border-radius: 7px;
+    cursor: pointer;
+
+}
+
+.slider {
+    width: 70vw;
+    margin: 12px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-img {
+    width: 100%;
+    height: 70vh;
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button.prev:hover,
+button.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.card {
+    max-width: 91vw;
+    margin: auto;
+}
+
+.card h2 {
+    margin: 25px 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-items {
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.card-items img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+}
+
+.my-1 {
+    margin: 5px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    height: 5vh;
+    background-color: var(--main-bg-color);
+    color: aliceblue;
+}
